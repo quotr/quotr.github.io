@@ -1,0 +1,10 @@
+/**
+ * @fileoverview The main css implementation for quotr.github.io, 2016.
+ * @author afablee@gmail.com, @superafable
+ */
+
+body {
+	background: linear-gradient(45deg, red, yellow);
+	width: 100vw;
+	height: 100vh;
+}
