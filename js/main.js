@@ -17,7 +17,7 @@
 	var g_y = 0;
 	var x_grad = 0;
 	var y_grad = 0;
-	var GRADIENT_INCREMENT = 2;
+	var GRADIENT_INCREMENT = 1;
 	var lightness = 0;
 	var animating = false;
 
