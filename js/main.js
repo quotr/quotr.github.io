@@ -17,8 +17,9 @@
 	var g_y = 0;
 	var x_grad = 0;
 	var y_grad = 0;
-	var GRADIENT_INCREMENT = 1;
+	var GRADIENT_INCREMENT = 2;
 	var lightness = 0;
+	var animating = false;
 
 	// mousemoves change background colour
 	$(document).on('mousemove.bkg', function(e) {
@@ -44,9 +45,15 @@
 
 	// mouseclicks change background light
 	$(document).on('click.bkg', function(e) {
+		if ( animating ) {
+			return;
+		}
+		animating = true;
 		lightness = Math.random()*100 >> 0;
 		var colour = Math.random()*360 >> 0;
-		$('body').css('background-color', 'hsl('+colour+', 100%, '+lightness+'%)');
+		$('body').animate({'background-color': 'hsl('+colour+', 100%, '+lightness+'%)'}, 'slow', function() {
+			animating = false;
+		} );
 	});
 
 
