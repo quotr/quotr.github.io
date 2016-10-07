@@ -4,12 +4,12 @@
  */
 
 body {
-	background-color: #ffa;
-	background-image: -webkit-gradient(linear, left bottom, right top, from(hsla(0, 80%, 70%, 0.66)), to(hsla(120, 80%, 70%, 0.66)));
-	background-image: -webkit-linear-gradient(45deg, hsla(0, 80%, 70%, 0.66), hsla(120, 80%, 70%, 0.66));
-	background-image: -moz-linear-gradient(45deg,hsla(0, 80%, 70%, 0.66), hsla(120, 80%, 70%, 0.66));
-	background-image: linear-gradient(to right top,hsla(0, 80%, 70%, 0.66), hsla(120, 80%, 70%, 0.66));
-	background-image: linear-gradient(to right top, hsla(0, 80%, 70%, 0.66), hsla(120, 80%, 70%, 0.66));
+	background-color: #fff;
+	background-image: -webkit-gradient(linear, left bottom, right top, from(hsla(0, 100%, 70%, 0.66)), to(hsla(180, 100%, 70%, 0.66)));
+	background-image: -webkit-linear-gradient(45deg, hsla(0, 100%, 70%, 0.66), hsla(180, 100%, 70%, 0.66));
+	background-image: -moz-linear-gradient(45deg,hsla(0, 100%, 70%, 0.66), hsla(180, 100%, 70%, 0.66));
+	background-image: linear-gradient(to right top,hsla(0, 100%, 70%, 0.66), hsla(180, 100%, 70%, 0.66));
+	background-image: linear-gradient(to right top, hsla(0, 100%, 70%, 0.66), hsla(180, 100%, 70%, 0.66));
 	
 	width: 100vw;
 	height: 100vh;
