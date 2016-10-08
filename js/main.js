@@ -26,6 +26,19 @@
 	var g_animating = false;
 	var g_fontColor = '#fff';
 	var FONT_LIGHT_THRESHOLD = 60;
+	var g_arrQuotes = [];	
+
+	// build the quote library
+	for ( let i = 0; i < 10; ++i ) {
+		g_arrQuotes.push({'quote': 'This is a quote #'+i, 'person': 'person #'+i});
+	}
+
+	// grab a new quote on #new-quote button click
+	$('#new-quote').on('click.getQuote', function() {
+		var index = ( Math.random() * g_arrQuotes.length ) >> 0;
+		$('#quote').text(g_arrQuotes[index].quote);
+		$('#person').text(g_arrQuotes[index].person);
+	});
 
 	// mousemoves change background colour
 	$(document).on('mousemove.bkg', function(e) {
