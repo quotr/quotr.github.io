@@ -33,14 +33,10 @@ body {
 .inner__text-color {
 	color: #333;
 	border-color: #333;
+	margin: 5px;
 }
-.inner__text-color.btn:hover#bird {
-	color: #36c !important;
-	border-color: #36c !important;
-}
-.inner__text-color.btn:hover#quote {
-	color: #c31 !important;
-	border-color: #c31 !important;
+.inner__text-color.btn:hover {
+	box-shadow: inset 3px 1px 9px 1px rgba(51, 51, 51, 0.125) !important;
 }
 
 .container {
