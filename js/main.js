@@ -11,6 +11,10 @@
 // $(document).ready(function() { console.log("LOADED $(document).ready..."); });
 
 (function($) {
+
+	// macro simulation for debugger
+	var de = false;
+	var bug = function(msg) { console.log(msg); };
 	
 	// global background variables 
 	var g_x = 0;
@@ -60,7 +64,7 @@
 		// if g_lightness > 75%, change font for better UX
 		g_fontColor = ( g_lightness > FONT_LIGHT_THRESHOLD )? '#333' : '#fff';
 		$('.inner__text-color').animate({'color': g_fontColor, 'border-color': g_fontColor}, 'slow');	
-		// console.log('g_lightness='+g_lightness+', g_fontColor='+g_fontColor);
+		de&&bug('g_lightness='+g_lightness+', g_fontColor='+g_fontColor);
 	});
 
 
