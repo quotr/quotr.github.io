@@ -34,9 +34,13 @@ body {
 	color: #333;
 	border-color: #333;
 }
-.inner__text-color.btn:hover {
-	color: #555 !important;
-	border-color: #555 !important;
+.inner__text-color.btn:hover#bird {
+	color: #36c !important;
+	border-color: #36c !important;
+}
+.inner__text-color.btn:hover#quote {
+	color: #c31 !important;
+	border-color: #c31 !important;
 }
 
 .container {
