@@ -32,19 +32,29 @@
 		{	'quote': 'This town doesn\'t have a mayor. But if there\'s ever ' +
 				'problem, a skeleton will tell a fish lady about it. ' +
 				'Thaaaaaat\'s politics!',
-			'person': 'Snowdin Bear' },
-		{	'quote': 'This is a quote that I am making up because I am a ' +
-				'maker-upper.',
-			'person': 'Me'},
-		{	'quote': 'If I die today, then it means nothing.',
-			'person': 'Sam Pepper'},
-		{	'quote': 'If you don\'t like your situation, change it. If you ' +
-				'can\'t, change your attitude. Don\'t complain.',
-			'person': 'Maya Angelou'},
-		{	'quote': 'As I walk through the valley and I look at my life, ' +
-				'I think I\'m some kind of really obscure kind of foolish ' +
-				'human being.',
-			'person': 'Monkey Moniker'}
+			'person':'Snowdin Bear' },
+		{	'quote': 'In this world, it\'s kill or be killed.',
+			'person': 'Flowey'},
+		{	'quote': 'Ribbit ribbit. (I heard using "F4" can make you have a "full screen." But what does "F4" stand for? "Four frogs?" I have only seen a maximum of three frogs in this room... This is troubling, to say the least.) Ribbit.',
+			'person': 'Froggit'},
+		{	'quote': 'NO!! YOU PLANNED IT ALL!!! YOU\'RE WAY BETTER AT DATING THAN I AM!!!',
+			'person': 'Papyrus'},
+		{	'quote': 'hOI!!!!!! i\'m tEMMIE!!',
+			'person': 'Temmie'},
+		{	'quote': 'Anime is real...right?',
+			'person': 'Undyne'},
+		{	'quote': 'Oh dear, are you serious...? And after you said you want to call me "mother..." You are an... ..."interesting" child.',
+			'person': 'Toriel'},
+		{	'quote': 'I like to just lie on the floor and feel like garbage.',
+			'person': 'Napstablook'},
+		{	'quote': 'It\'s a beautiful day outside. Birds are singing, ' + 
+				'flowers are blooming. On days like this...kids like you...' + 
+				'SHOULD BE BURNING IN HELL.',
+			'person': 'Sans'},
+		{	'quote': 'Awkwarrrd.',
+			'person': 'Jerry'},
+		{	'quote': 'Ahuhuhuhu...',
+			'person': 'Muffet'}
 	];	
 
 	// grab a new quote on #new-quote button click
