@@ -27,6 +27,7 @@
 	var g_fontColor = '#fff';
 	var FONT_LIGHT_THRESHOLD = 60;
 	// build the quote library
+	var MAX_QUOTE_LENGTH = 80;
 	var g_arrQuotes = [
 		{	'quote': 'This town doesn\'t have a mayor. But if there\'s ever ' +
 				'problem, a skeleton will tell a fish lady about it. ' +
@@ -53,11 +54,23 @@
 			return;
 		}
 		var index = ( Math.random() * g_arrQuotes.length ) >> 0;
-		// fadeout, change quote, fadein
+		// fadeout, change quote/person/update tweet, fadein
 		$('.inner').animate({'opacity': 0}, 'slow', function() {
+			// change quote & person
 			$('#quote').html('<i class="fa fa-quote-left" ' + 
 				'aria-hidden="true"></i> ' + g_arrQuotes[index].quote);
 			$('#person').html('&mdash; ' + g_arrQuotes[index].person);
+
+			// update tweet info with new quote/person
+			var twt = $('#bird').attr('href').match(/.*&text=/i);
+			// truncate quote if quote + person too long
+			var shortQuote = g_arrQuotes[index].quote;
+			if ( g_arrQuotes[index].quote.length + g_arrQuotes[index].person.length > MAX_QUOTE_LENGTH ) {
+				shortQuote = g_arrQuotes[index].quote.slice(0,
+					MAX_QUOTE_LENGTH - g_arrQuotes[index].person.length) + '...';
+			}
+			twt += '\"' + shortQuote + '\" --' + g_arrQuotes[index].person;
+			$('#bird').attr('href', twt);
 			$(this).animate({'opacity': 1}, 'slow');
 		})
 	});
