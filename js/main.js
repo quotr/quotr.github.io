@@ -109,7 +109,7 @@
 			'hsla('+(grad+180)+', 100%, 70%, 0.66))');
 	});
 
-	// mouseclicks change background light
+	// mouseclicks change background colour & light
 	$(document).on('click.bkg', function(e) {
 		if ( g_animating ) {
 			return;
