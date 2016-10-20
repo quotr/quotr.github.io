@@ -21,7 +21,7 @@
 	var g_y = 0;
 	var g_xGrad = 0;
 	var g_yGrad = 0;
-	var GRADIENT_INCREMENT = 1;
+	var GRADIENT_INCREMENT = 0.1;
 	var g_lightness = 0;
 	var g_animating = false;
 	var g_fontColor = '#fff';
@@ -103,7 +103,7 @@
 		g_y = y;
 		g_yGrad += y_sig * GRADIENT_INCREMENT;
 		
-		var grad = g_xGrad + g_yGrad;
+		var grad = (g_xGrad + g_yGrad)>>0;
 		$('body').css('background-image',
 			'linear-gradient(to right top, hsla('+grad+', 100%, 70%, 0.66), ' +
 			'hsla('+(grad+180)+', 100%, 70%, 0.66))');
