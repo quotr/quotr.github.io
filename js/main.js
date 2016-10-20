@@ -21,7 +21,7 @@
 	var g_y = 0;
 	var g_xGrad = 0;
 	var g_yGrad = 0;
-	var GRADIENT_INCREMENT = 0.1;
+	var GRADIENT_INCREMENT = 0.2;
 	var g_lightness = 0;
 	var g_animating = false;
 	var g_fontColor = '#fff';
