@@ -63,6 +63,10 @@
 		if ( $(':animated').length ) {
 			return;
 		}
+
+		// change the background colour & lightness
+		changeBackground();
+
 		var index = ( Math.random() * g_arrQuotes.length ) >> 0;
 		// fadeout, change quote/person/update tweet, fadein
 		$('.inner').animate({'opacity': 0}, 'slow', function() {
@@ -85,7 +89,7 @@
 		})
 	});
 
-	// mousemoves change background colour
+	// mousemoves change background colour based on GRADIENT_INCREMENT
 	$(document).on('mousemove.bkg', function(e) {
 		// capture x (left & right) movements & sign 
 		var x = e.clientX;
@@ -109,8 +113,8 @@
 			'hsla('+(grad+180)+', 100%, 70%, 0.66))');
 	});
 
-	// mouseclicks change background colour & light
-	$(document).on('click.bkg', function(e) {
+	// change background colour & lightness
+	var changeBackground = function() {
 		if ( g_animating ) {
 			return;
 		}
@@ -127,8 +131,6 @@
 		$('.inner__text-color').animate({'color': g_fontColor,
 			'border-color': g_fontColor}, 'slow');	
 		de&&bug('g_lightness='+g_lightness+', g_fontColor='+g_fontColor);
-	});
-
-
+	}
 
 })(jQuery);
